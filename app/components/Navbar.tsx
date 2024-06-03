@@ -10,8 +10,8 @@ export function Navbar() {
             Arrovain<span className="text-violet-500">UI</span>
           </h1>
         </Link>
-        <NavbarLinks />
       </div>
+      <NavbarLinks />
     </nav>
   );
 }
