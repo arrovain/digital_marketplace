@@ -8,14 +8,14 @@ export function Navbar() {
       <div className="md:col-span-3">
         <Link href="">
           <h1 className="text-2xl font-semibold">
-            Arrovain<span className="text-violet-500">UI</span>
+            Arrovain<span className="text-primary">UI</span>
           </h1>
         </Link>
       </div>
       <NavbarLinks />
       <div className="flex items-center gap-x-2 ms-auto md:col-span-3">
         <Button>Login</Button>
-        <Button>Register</Button>
+        <Button variant={"secondary"}>Register</Button>
       </div>
     </nav>
   );
