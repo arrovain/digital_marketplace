@@ -22,12 +22,18 @@ export async function Navbar() {
       </div>
       <NavbarLinks />
       <div className="flex items-center gap-x-2 ms-auto md:col-span-3">
-        <Button>
-          <LoginLink>Login</LoginLink>
-        </Button>
-        <Button variant={"secondary"} asChild>
-          <RegisterLink>Register</RegisterLink>
-        </Button>
+        {user ? (
+          <h1>user is authenticated</h1>
+        ) : (
+          <div className="flex items-center gap-x-2">
+            <Button>
+              <LoginLink>Login</LoginLink>
+            </Button>
+            <Button variant={"secondary"} asChild>
+              <RegisterLink>Register</RegisterLink>
+            </Button>
+          </div>
+        )}
 
         <div className="md:hidden">
           <MobileMenu />
