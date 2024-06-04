@@ -9,8 +9,8 @@ export function UserNav() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <Button>
-          <Avatar>
+        <Button variant="ghost" className="relative h-10 w-10 rounded-full">
+          <Avatar className="h-10 w-10">
             <AvatarFallback>icme</AvatarFallback>
           </Avatar>
         </Button>
