@@ -9,6 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 export function UserNav() {
   return (
@@ -41,6 +42,10 @@ export function UserNav() {
           <DropdownMenuItem>test</DropdownMenuItem>
           <DropdownMenuItem>test</DropdownMenuItem>
         </DropdownMenuGroup>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem asChild>
+          <LogoutLink>Logout</LogoutLink>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
