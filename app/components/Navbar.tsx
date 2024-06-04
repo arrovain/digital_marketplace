@@ -7,6 +7,7 @@ import {
   RegisterLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import { UserNav } from "./UserNav";
 
 export async function Navbar() {
   const { getUser } = getKindeServerSession();
@@ -23,7 +24,7 @@ export async function Navbar() {
       <NavbarLinks />
       <div className="flex items-center gap-x-2 ms-auto md:col-span-3">
         {user ? (
-          <h1>user is authenticated</h1>
+          <UserNav />
         ) : (
           <div className="flex items-center gap-x-2">
             <Button>
