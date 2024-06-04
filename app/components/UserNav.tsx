@@ -2,6 +2,8 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -15,6 +17,13 @@ export function UserNav() {
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-56" align="end" forceMount>
+        <DropdownMenuLabel className="font-normal">
+          <div className="flex flex-col space-y-1">
+            <p>icme</p>
+          </div>
+        </DropdownMenuLabel>
+      </DropdownMenuContent>
     </DropdownMenu>
   );
 }
